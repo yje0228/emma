@@ -1,0 +1,41 @@
+# Site settings
+title: Emma's MKT
+description: "양엠마의 마케팅"
+url: "https://www.emmamkt.com"
+author:
+  name: "Emma Yang"
+  email: "yje0228@gmail.com"
+  url: "https://www.emmamkt.com"
+
+# Build settings
+baseurl: /
+markdown: kramdown
+permalink: /:title
+paginate: 8
+
+# Default values
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Custom variables
+version: "1.1.0"
+
+# Options
+custom_header: false
+custom_nav_footer: false
+reverse: false
+
+# 블로그 disqus shortname
+disqus:
+  shortname: emmamkt
